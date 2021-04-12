@@ -58,7 +58,7 @@ def d_step(config, vocab, model_F, model_D, optimizer_D, batch, temperature):
             raw_styles,
             generate=True,
             differentiable_decode=True,
-            temperature=temperature,
+            temperature=temperature
         )
         rev_gen_log_probs = model_F(
             inp_tokens,
@@ -67,7 +67,7 @@ def d_step(config, vocab, model_F, model_D, optimizer_D, batch, temperature):
             rev_styles,
             generate=True,
             differentiable_decode=True,
-            temperature=temperature,
+            temperature=temperature
         )
 
     
